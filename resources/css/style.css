@@ -1,0 +1,16 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family:helvetica,sans-serif;
+}
+
+.logo{
+  color:#fff;
+  background-color: black;
+}
+
+figure img {
+  height: 9rem;
+}
