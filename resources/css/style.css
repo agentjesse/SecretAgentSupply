@@ -116,6 +116,7 @@ footer{
 }
 
 /*media queries*/
+/*1024px originally but lowered to 950 to show on iP5*/
 @media only screen and (max-width:950px){
 
   .product{
