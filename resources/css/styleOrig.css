@@ -12,12 +12,8 @@ body{
 /*960px centering container*/
 .limiter{
   width: 960px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -57,8 +53,7 @@ nav{
 }
 ul{
   /*override justification*/
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 li{
   padding: 0.75rem;
@@ -71,23 +66,15 @@ li:last-child{
 /*products*/
 .productGrid{
   margin-top: 3rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .product{
   width: 30%;
 }
 .imageHolder{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 0;
   border: 4px solid black;
   height: 9rem;
@@ -106,9 +93,7 @@ li:last-child{
 /*business info*/
 .business{
  margin: 3rem auto 4rem;
- -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-         justify-content: space-between;
+ justify-content: space-between;
 }
 .business div{
  width: 35%;
@@ -124,8 +109,6 @@ li:last-child{
 
 /*footer*/
 footer{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #000;
   height: 5rem;
@@ -164,12 +147,8 @@ footer{
 
 @media only screen and (max-width:470px){
   .banner{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     height: 15rem;
     padding-top: 0;
   }
@@ -190,10 +169,7 @@ footer{
   }
 
   .logo .limiter{
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center;
+    align-items: center;
   }
 
   .productGrid div:not(:nth-child(1)) {
@@ -201,13 +177,8 @@ footer{
   }
 
   .business{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .business div{
     margin: 0 auto 0.5rem;
@@ -215,8 +186,6 @@ footer{
   }
 
   footer .limiter{
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
