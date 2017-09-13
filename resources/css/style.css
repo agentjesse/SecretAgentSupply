@@ -58,6 +58,10 @@ ul{
 li{
   padding: 0.75rem;
 }
+/*hidden menu option to use later*/
+li:last-child{
+  display: none;
+}
 
 /*products*/
 .productGrid{
@@ -109,4 +113,78 @@ footer{
   background-color: #000;
   height: 5rem;
   text-align: left;
+}
+
+/*media queries*/
+@media only screen and (max-width:1024px){
+
+  .product{
+    width: 47%;
+  }
+
+  .limiter{
+    width: 100%;
+  }
+
+  .business p{
+    white-space: nowrap;
+  }
+
+  .productGrid div:nth-child(2){
+    display: none;
+  }
+  /*hide all list items in nav*/
+  li{
+    display: none;
+  }
+  /*show last child */
+  li:last-child{
+    display:block;
+  }
+
+}
+
+@media only screen and (max-width:470px){
+  .banner{
+    display: flex;
+    align-items: flex-end;
+    height: 15rem;
+    padding-top: 0;
+  }
+  .banText{
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  h4{
+    font-size: 0.77rem;
+  }
+  h1{
+    font-size: 1rem;
+  }
+
+  .product{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logo .limiter{
+    align-items: center;
+  }
+
+  .productGrid div:not(:nth-child(1)) {
+    display: none;
+  }
+
+  .business{
+    display: flex;
+    flex-direction: column;
+  }
+  .business div{
+    margin: 0 auto 0.5rem;
+    width: 90%;
+  }
+
+  footer .limiter{
+    justify-content: center;
+  }
 }
